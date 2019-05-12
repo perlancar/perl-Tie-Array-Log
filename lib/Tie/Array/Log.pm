@@ -129,7 +129,7 @@ sub UNTIE {
 
 This class implements tie interface for array but performs regular array
 operations, except logging the operation with L<Log::ger>. It's basically used
-for testing or benchmarking.
+for testing, benchmarking, documentation.
 
 
 =head1 SEE ALSO
@@ -137,5 +137,9 @@ for testing or benchmarking.
 L<perltie>
 
 L<Log::ger>
+
+L<Tie::Scalar::Log>, L<Tie::Hash::Log>, L<Tie::Handle::Log>.
+
+L<Tie::Array>, L<Tie::StdArray>
 
 =cut
