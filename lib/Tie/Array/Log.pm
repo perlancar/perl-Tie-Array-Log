@@ -134,8 +134,10 @@ for testing or benchmarking.
 
 =head1 SEE ALSO
 
-L<perltie>
+L<Tie::StdArray>
 
 L<Log::ger>
+
+L<perltie>
 
 =cut
