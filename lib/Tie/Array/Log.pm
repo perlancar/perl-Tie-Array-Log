@@ -60,11 +60,9 @@ sub DELETE {
 }
 
 sub CLEAR {
-    my ($this, $key) = @_;
-    my $res = $this->[$key];
+    my $this = shift;
+    log_trace "CLEAR()";
     @$this = ();
-    log_trace "CLEAR(): %s", $res;
-    $this;
 }
 
 sub PUSH {
