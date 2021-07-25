@@ -11,7 +11,7 @@ sub TIEARRAY {
     my $class = shift;
 
     log_trace "TIEARRAY(%s, %s)", $class, \@_;
-    bless \@_, $class;
+    bless [@_], $class;
 }
 
 sub FETCH {
@@ -72,14 +72,14 @@ sub PUSH {
 }
 
 sub POP {
-    my ($this) = @_;
+    my $this = shift;
     my $res = pop @$this;
     log_trace "POP(): %s", $res;
     $res;
 }
 
 sub SHIFT {
-    my ($this) = @_;
+    my $this = shift;
     my $res = shift @$this;
     log_trace "SHIFT(): %s", $res;
     $res;
